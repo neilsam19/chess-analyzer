@@ -1,2 +1,5 @@
 *.exe
 *.json
+/v0/backend/venv
+/v0/backend/app/__pycache__/
+/v0/backend/.env
