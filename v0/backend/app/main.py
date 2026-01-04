@@ -1,15 +1,16 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from pathlib import Path
 
-from .init_dirs import ensure_dirs
-from .pipeline import run_pipeline
+from app.api.analyze import router as analyze_router
+from app.init_dirs import ensure_dirs
 
 app = FastAPI(title="Chess Analysis v0")
 
-# Allow frontend dev server later
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=["*"],  # v0 only; tighten later
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -23,17 +24,9 @@ def _startup():
 def health():
     return {"status": "ok"}
 
-@app.post("/api/analyze")
-async def analyze(pgn: UploadFile = File(...)):
-    if not pgn.filename.lower().endswith((".pgn", ".txt")):
-        raise HTTPException(status_code=400, detail="Upload a .pgn file")
+# Include API routes
+app.include_router(analyze_router, prefix="/api")
 
-    pgn_bytes = await pgn.read()
-    if len(pgn_bytes) == 0:
-        raise HTTPException(status_code=400, detail="Empty file")
-
-    try:
-        return run_pipeline(pgn_bytes)
-    except Exception as e:
-        # For v0, surface error; later we’ll log nicely
-        raise HTTPException(status_code=500, detail=str(e))
+# Serve frontend
+FRONTEND_DIR = Path(__file__).resolve().parents[2] / "frontend"
+app.mount("/", StaticFiles(directory=str(FRONTEND_DIR), html=True), name="frontend")

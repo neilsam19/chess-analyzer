@@ -3,10 +3,10 @@ import subprocess
 from pathlib import Path
 from uuid import uuid4
 
-from .config import UPLOADS_DIR, ARTIFACTS_DIR, SCRIPTS_DIR, STOCKFISH_PATH
+from app.core.config import UPLOADS_DIR, ARTIFACTS_DIR, SCRIPTS_DIR, STOCKFISH_PATH
 
 
-def run_pipeline(pgn_bytes: bytes) -> dict:
+async def run_analysis(pgn_bytes: bytes) -> dict:
     """
     Saves PGN, runs:
       1) analyze_game.py -> engine_artifact.json
@@ -25,8 +25,7 @@ def run_pipeline(pgn_bytes: bytes) -> dict:
     analyze_py = SCRIPTS_DIR / "analyze_game.py"
     derive_py = SCRIPTS_DIR / "derive_insights.py"
 
-    # ---- 1) Analyze PGN with Stockfish (adjust args to match YOUR script) ----
-    # IMPORTANT: you must align these CLI args to what analyze_game.py expects.
+    # ---- 1) Analyze PGN with Stockfish ----
     cmd1 = [
         "python",
         str(analyze_py),
@@ -39,7 +38,7 @@ def run_pipeline(pgn_bytes: bytes) -> dict:
     ]
     subprocess.run(cmd1, check=True)
 
-    # ---- 2) Derive turning points (adjust args to match YOUR script) ----
+    # ---- 2) Derive turning points ----
     cmd2 = [
         "python",
         str(derive_py),
