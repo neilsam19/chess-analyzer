@@ -1,0 +1,377 @@
+{
+  "game_id": "0adc65eb0470abe3",
+  "source_engine_artifact": "engine_artifact.json",
+  "turning_points": [
+    {
+      "ply": 30,
+      "fullmove": 16,
+      "mover": "black",
+      "side_to_move": "white",
+      "played": {
+        "san": "hxg5",
+        "uci": "h6g5"
+      },
+      "fen": "r1b2b1r/pppk2p1/4p1q1/3pP1p1/7Q/3P1N2/PP2KPPP/2R4R w - - 0 16",
+      "eval_before_cp": 51,
+      "eval_after_cp": 191,
+      "delta_cp_white_pov": 140,
+      "pv_uci": [
+        "h4h8",
+        "g6f5",
+        "h8h5",
+        "f8e7",
+        "h2h3",
+        "b7b6",
+        "h5g4",
+        "c7c5",
+        "g4f5",
+        "e6f5",
+        "g2g4",
+        "d7e6"
+      ],
+      "best_move_uci": "h4h8"
+    },
+    {
+      "ply": 35,
+      "fullmove": 18,
+      "mover": "white",
+      "side_to_move": "black",
+      "played": {
+        "san": "Qh3",
+        "uci": "h8h3"
+      },
+      "fen": "r1b5/pppkbqp1/4p3/3pP1p1/6P1/3P1N1Q/PP2KP1P/2R4R b - - 2 18",
+      "eval_before_cp": 210,
+      "eval_after_cp": -1,
+      "delta_cp_white_pov": -211,
+      "pv_uci": [
+        "b7b6",
+        "h3g3",
+        "c8a6",
+        "h2h4",
+        "g5h4",
+        "f3h4",
+        "e7g5",
+        "c1d1",
+        "a8f8",
+        "h4g2",
+        "g5e7",
+        "f2f4"
+      ],
+      "best_move_uci": "b7b6"
+    },
+    {
+      "ply": 43,
+      "fullmove": 22,
+      "mover": "white",
+      "side_to_move": "black",
+      "played": {
+        "san": "Nd2",
+        "uci": "f3d2"
+      },
+      "fen": "5r2/p1pkb1p1/bp2p1q1/3pP1p1/6P1/2RP2Q1/PP1NKP1P/3R4 b - - 7 22",
+      "eval_before_cp": -61,
+      "eval_after_cp": -169,
+      "delta_cp_white_pov": -108,
+      "pv_uci": [
+        "e7b4",
+        "h2h3",
+        "b4c3",
+        "b2c3",
+        "f8f4",
+        "d1a1",
+        "f4a4",
+        "g3f3",
+        "d7c8",
+        "f3f8",
+        "c8b7"
+      ],
+      "best_move_uci": "e7b4"
+    },
+    {
+      "ply": 47,
+      "fullmove": 24,
+      "mover": "white",
+      "side_to_move": "black",
+      "played": {
+        "san": "a3",
+        "uci": "a2a3"
+      },
+      "fen": "8/p1pk2p1/bp2p1q1/3pP1p1/1b3rP1/PR1P2Q1/1P1NKP1P/3R4 b - - 0 24",
+      "eval_before_cp": -114,
+      "eval_after_cp": -285,
+      "delta_cp_white_pov": -171,
+      "pv_uci": [
+        "b4c5",
+        "h2h3",
+        "c5d4",
+        "d1f1",
+        "d4e5",
+        "e2d1",
+        "c7c5",
+        "f1e1",
+        "g6f6",
+        "d1c1",
+        "e5d6",
+        "g3e3"
+      ],
+      "best_move_uci": "b4c5"
+    },
+    {
+      "ply": 57,
+      "fullmove": 29,
+      "mover": "white",
+      "side_to_move": "black",
+      "played": {
+        "san": "Ne3",
+        "uci": "f1e3"
+      },
+      "fen": "8/p2k2p1/bp2pq2/2ppb1p1/5rP1/PR1PNP2/1P1RK1QP/8 b - - 1 29",
+      "eval_before_cp": -327,
+      "eval_after_cp": -439,
+      "delta_cp_white_pov": -112,
+      "pv_uci": [
+        "a6b7",
+        "e2e1",
+        "b7c6",
+        "g2e2",
+        "f4f3",
+        "a3a4",
+        "e5d6",
+        "b3a3",
+        "a7a6"
+      ],
+      "best_move_uci": "a6b7"
+    },
+    {
+      "ply": 69,
+      "fullmove": 35,
+      "mover": "white",
+      "side_to_move": "black",
+      "played": {
+        "san": "Kd2",
+        "uci": "e1d2"
+      },
+      "fen": "8/p1bk2p1/1p2pq2/2p3p1/2Np1r2/PR1P1b2/1P1K1R1P/5Q2 b - - 5 35",
+      "eval_before_cp": -519,
+      "eval_after_cp": -860,
+      "delta_cp_white_pov": -341,
+      "pv_uci": [
+        "f3g2",
+        "f2g2",
+        "f4f1",
+        "d2c2",
+        "f6f3",
+        "g2d2",
+        "f3h1",
+        "b3b5",
+        "c7f4",
+        "c2b3",
+        "f4d2",
+        "c4d2"
+      ],
+      "best_move_uci": "f3g2"
+    }
+  ],
+  "top_turning_points": [
+    {
+      "ply": 69,
+      "fullmove": 35,
+      "mover": "white",
+      "side_to_move": "black",
+      "played": {
+        "san": "Kd2",
+        "uci": "e1d2"
+      },
+      "fen": "8/p1bk2p1/1p2pq2/2p3p1/2Np1r2/PR1P1b2/1P1K1R1P/5Q2 b - - 5 35",
+      "eval_before_cp": -519,
+      "eval_after_cp": -860,
+      "delta_cp_white_pov": -341,
+      "pv_uci": [
+        "f3g2",
+        "f2g2",
+        "f4f1",
+        "d2c2",
+        "f6f3",
+        "g2d2",
+        "f3h1",
+        "b3b5",
+        "c7f4",
+        "c2b3",
+        "f4d2",
+        "c4d2"
+      ],
+      "best_move_uci": "f3g2"
+    },
+    {
+      "ply": 35,
+      "fullmove": 18,
+      "mover": "white",
+      "side_to_move": "black",
+      "played": {
+        "san": "Qh3",
+        "uci": "h8h3"
+      },
+      "fen": "r1b5/pppkbqp1/4p3/3pP1p1/6P1/3P1N1Q/PP2KP1P/2R4R b - - 2 18",
+      "eval_before_cp": 210,
+      "eval_after_cp": -1,
+      "delta_cp_white_pov": -211,
+      "pv_uci": [
+        "b7b6",
+        "h3g3",
+        "c8a6",
+        "h2h4",
+        "g5h4",
+        "f3h4",
+        "e7g5",
+        "c1d1",
+        "a8f8",
+        "h4g2",
+        "g5e7",
+        "f2f4"
+      ],
+      "best_move_uci": "b7b6"
+    },
+    {
+      "ply": 47,
+      "fullmove": 24,
+      "mover": "white",
+      "side_to_move": "black",
+      "played": {
+        "san": "a3",
+        "uci": "a2a3"
+      },
+      "fen": "8/p1pk2p1/bp2p1q1/3pP1p1/1b3rP1/PR1P2Q1/1P1NKP1P/3R4 b - - 0 24",
+      "eval_before_cp": -114,
+      "eval_after_cp": -285,
+      "delta_cp_white_pov": -171,
+      "pv_uci": [
+        "b4c5",
+        "h2h3",
+        "c5d4",
+        "d1f1",
+        "d4e5",
+        "e2d1",
+        "c7c5",
+        "f1e1",
+        "g6f6",
+        "d1c1",
+        "e5d6",
+        "g3e3"
+      ],
+      "best_move_uci": "b4c5"
+    },
+    {
+      "ply": 30,
+      "fullmove": 16,
+      "mover": "black",
+      "side_to_move": "white",
+      "played": {
+        "san": "hxg5",
+        "uci": "h6g5"
+      },
+      "fen": "r1b2b1r/pppk2p1/4p1q1/3pP1p1/7Q/3P1N2/PP2KPPP/2R4R w - - 0 16",
+      "eval_before_cp": 51,
+      "eval_after_cp": 191,
+      "delta_cp_white_pov": 140,
+      "pv_uci": [
+        "h4h8",
+        "g6f5",
+        "h8h5",
+        "f8e7",
+        "h2h3",
+        "b7b6",
+        "h5g4",
+        "c7c5",
+        "g4f5",
+        "e6f5",
+        "g2g4",
+        "d7e6"
+      ],
+      "best_move_uci": "h4h8"
+    },
+    {
+      "ply": 57,
+      "fullmove": 29,
+      "mover": "white",
+      "side_to_move": "black",
+      "played": {
+        "san": "Ne3",
+        "uci": "f1e3"
+      },
+      "fen": "8/p2k2p1/bp2pq2/2ppb1p1/5rP1/PR1PNP2/1P1RK1QP/8 b - - 1 29",
+      "eval_before_cp": -327,
+      "eval_after_cp": -439,
+      "delta_cp_white_pov": -112,
+      "pv_uci": [
+        "a6b7",
+        "e2e1",
+        "b7c6",
+        "g2e2",
+        "f4f3",
+        "a3a4",
+        "e5d6",
+        "b3a3",
+        "a7a6"
+      ],
+      "best_move_uci": "a6b7"
+    },
+    {
+      "ply": 43,
+      "fullmove": 22,
+      "mover": "white",
+      "side_to_move": "black",
+      "played": {
+        "san": "Nd2",
+        "uci": "f3d2"
+      },
+      "fen": "5r2/p1pkb1p1/bp2p1q1/3pP1p1/6P1/2RP2Q1/PP1NKP1P/3R4 b - - 7 22",
+      "eval_before_cp": -61,
+      "eval_after_cp": -169,
+      "delta_cp_white_pov": -108,
+      "pv_uci": [
+        "e7b4",
+        "h2h3",
+        "b4c3",
+        "b2c3",
+        "f8f4",
+        "d1a1",
+        "f4a4",
+        "g3f3",
+        "d7c8",
+        "f3f8",
+        "c8b7"
+      ],
+      "best_move_uci": "e7b4"
+    }
+  ],
+  "first_critical_mistake": {
+    "ply": 47,
+    "fullmove": 24,
+    "mover": "white",
+    "played": {
+      "san": "a3",
+      "uci": "a2a3"
+    },
+    "fen": "8/p1pk2p1/bp2p1q1/3pP1p1/1b3rP1/PR1P2Q1/1P1NKP1P/3R4 b - - 0 24",
+    "eval_before_cp": -114,
+    "eval_after_cp": -285,
+    "delta_cp_white_pov": -171,
+    "delta_cp_mover_pov": -171,
+    "best_move_uci": "b4c5",
+    "pv_uci": [
+      "b4c5",
+      "h2h3",
+      "c5d4",
+      "d1f1",
+      "d4e5",
+      "e2d1",
+      "c7c5",
+      "f1e1",
+      "g6f6",
+      "d1c1",
+      "e5d6",
+      "g3e3"
+    ]
+  }
+}
